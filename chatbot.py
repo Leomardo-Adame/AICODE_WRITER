@@ -17,7 +17,7 @@ def openai_response(question):
         max_tokens=1000,
     )
     print(response.choices)
-    print(response, '{}'.format(response.choices[0].text[6:]))
+    print(response, f'{response.choices[0].text[6:]}')
     # return '{}'.format(response.choices[0].text[6:])
     return response.choices[0].text
 def index():
